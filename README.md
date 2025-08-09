@@ -13,7 +13,6 @@ flowchart LR
     E --> F[Text Output + Text-to-Speech]
     F --> G[User Voice/Text Response]
 ```
-
 ### Features
 
 📦 Inventory tracking – Knows what items are in your fridge.
