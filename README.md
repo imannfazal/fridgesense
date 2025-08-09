@@ -2,6 +2,18 @@
 
 Smart AI-powered fridge assistant that helps you track what’s inside your fridge, understand your eating habits, and suggest healthy, personalized recipes.
 
+### System Overview
+
+```mermaid
+flowchart LR
+    A[User Voice/Text Query] --> B[Speech-to-Text / Text Input]
+    B --> C[LLM Processing + Context Embedding]
+    C --> D[Semantic Search on Recipe & Fridge DB]
+    D --> E[Recipe Selection Based on Health + History + Inventory]
+    E --> F[Text Output + Text-to-Speech]
+    F --> G[User Voice/Text Response]
+```
+
 ### Features
 
 📦 Inventory tracking – Knows what items are in your fridge.
