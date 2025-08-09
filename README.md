@@ -17,15 +17,15 @@ Smart AI-powered fridge assistant that helps you track what’s inside your frid
 
 ### Tech Stack
 
-Python (main programming language)
+1. Python (main programming language)
 
-Transformers / LLM (for understanding your queries)
+2. Transformers / LLM (for understanding your queries)
 
-Speech-to-Text & Text-to-Speech (for voice input/output)
+3. Speech-to-Text & Text-to-Speech (for voice input/output)
 
-Semantic Search (e.g., FAISS, Pinecone)
+4. Semantic Search
 
-Database (for storing inventory and meal history)
+5. Database (for storing inventory and meal history)
 
 
 ### How It Works
