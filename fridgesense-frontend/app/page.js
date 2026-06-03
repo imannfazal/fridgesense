@@ -18,11 +18,10 @@ export default function Home() {
         backgroundImage: 'linear-gradient(90deg, rgba(34, 64, 51, 1) 0%, rgba(15, 11, 8, 1) 100%)'
       }}
     >
-
       {/* Nav */}
       <nav className="flex justify-between items-center px-20 py-8 relative z-10">
-        <div className="hover:cursor-pointer text-[#A89880] hover:text-[#F5ECD7] text-[14px] tracking-[4px] leading-tight transition-colors">
-          fridge <div className="ml-5 -mt-[6px]">sense</div>
+        <div className="tracking-[5px] font-extrabold hover:cursor-pointer text-[#A89880] hover:text-[#F5ECD7] text-[14px]  leading-tight transition-colors">
+          <a href="/">fridge <div className="tracking-[7px] -mt-[2px]">sense</div></a>
         </div>
         <a href="#" className="text-[#A89880] text-sm hover:text-[#F5ECD7] transition-colors">
           sign in
@@ -30,13 +29,16 @@ export default function Home() {
       </nav>
 
       {/* Food image — right side */}
-      <div className="absolute right-0 h-full w-[60%]">
+      <div className="absolute right-[-30rem] top-0 h-full w-[75%] overflow-hidden">
         <Image
           src="/hero-food.png"
           alt="hero food"
           fill
-          className="object-cover object-left"
-          style={{ mixBlendMode: "color-dodge" }}
+          className="object-cover"
+          style={{
+            objectPosition: "120% center",
+            mixBlendMode: "color-dodge",
+          }}
         />
 
       </div>
@@ -71,7 +73,7 @@ export default function Home() {
               is enough.
             </h1>
           </div>
-          <p className="text-[#A89880] text-lg mb-4">
+          <p className="text-[#A89880] text-lg mb-7">
             6 ingredients. Low-carb. Here's tonight.
           </p>
           <a
