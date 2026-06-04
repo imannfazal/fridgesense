@@ -77,8 +77,11 @@ export default function Onboarding() {
                     </div>
                     <div className="flex justify-center">
                         <p
-                            onClick={handleContinue}
-                            className="text-[#A89880]/60 text-md cursor-pointer hover:text-[#A89880] transition-colors self-center mt-[80px]"
+                            onClick={name.trim() ? handleContinue : undefined}
+                            className={`text-md self-center mt-[80px] transition-colors ${name.trim()
+                                    ? "cursor-pointer text-[#A89880] hover:text-[#A89880]"
+                                    : "cursor-not-allowed text-[#A89880]/60"
+                                }`}
                         >
                             continue →
                         </p>
